@@ -1,0 +1,51 @@
+.profile{
+    width: 183px;
+    height: 183px;
+    background-image: url(https://i.pinimg.com/originals/84/29/94/8429942830ee706352fa51d1af23d503.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.notify{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notify p {
+    color: white;
+}
+
+.change-img {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+button {
+    width: 60px;
+    height: 45;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: aqua;
+}

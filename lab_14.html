@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-body">
+            <div class="profile" id="profile">
+                <div class="notify"><p>1</p></div>
+        </div>
+
+
+            <div class="upper">
+                <h1 id="user">Username</h1>
+                <div class="change-infor">
+                    <label>Set Username</label><input type="text" id="nameuser"><button onclick="setName()">Set</button>
+                </div>
+                <div class="change-img">
+                    <label>Set image</label><input type="text" id="profileid"><button onclick="setImg()">Set</button>
+                </div>
+            </div>
+
+            
+            <div class="container">
+                <h1>Phone number</h1>
+                <label>Set Phone</label><input type="text" id="textContain"><button onclick="addParagraph()">Add</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const username = document.getElementById("user");
+
+        const input = document.getElementById("nameuser");
+
+        const profileInput = document.getElementById("profileid");
+
+        const profile = document.getElementById("profile");
+
+        const newdiv = document.getElementsByClassName("container");
+
+        const textContain = document.getElementById("textContain");
+
+
+        function setName () {
+            username.textContent = "Welcome, " + input.value;
+        }
+
+        function setImg() {
+            profile.style.backgroundImage = "url("+ profileInput.value +")";
+        }
+
+        function addParagraph() {
+            const newpara = document.createElement("p");
+            newpara.textContent = textContain.value;
+            newdiv.appendChild(newpara);
+        }
+    </script>
+</body>
+</html>
