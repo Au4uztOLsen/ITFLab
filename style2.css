@@ -1,11 +1,37 @@
 .profile{
     width: 183px;
     height: 183px;
-    background-image: url(https://i.pinimg.com/originals/84/29/94/8429942830ee706352fa51d1af23d503.jpg);
+    background-image: url(https://scontent.fbkk21-1.fna.fbcdn.net/v/t39.30808-6/431659745_820965360045839_7058703836809673405_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=AxxqkDGx5-oQ7kNvgEZEamk&_nc_ht=scontent.fbkk21-1.fna&_nc_gid=AtKpQRuF4HlgJKHOBAgrPdu&oh=00_AYCw8AfnZHBnkxK0nzKWXCRUHxmtdBF6WVpXliZr4_kU9w&oe=67103623);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
     position: relative;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+b {
+    font-family: sans-serif;
+}
+
+.upper {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 .notify{
@@ -21,6 +47,16 @@
     right: 10px;
 }
 
+.main-body {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
 .main-container {
     display: flex;
     align-items: center;
@@ -29,9 +65,42 @@
 .notify p {
     color: white;
 }
+.change-infor {
+    width: 120%;
+}
 
 .change-img {
     margin-top: 20px;
+}
+
+.phoneclass {
+    margin-top: 55px;
+}
+
+tr {
+    height: 40px;
+}
+
+td {
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+th {
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.table-form {
+    margin-top: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
 
 label {
@@ -39,13 +108,31 @@ label {
 }
 
 button {
-    width: 60px;
-    height: 45;
-    margin-left: 15px;
+    width: 70px;
+    height: 40px;
+    color: white;
+    background-color: #0D92F4;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    margin-right: 10px;
+}
 
+input {
+    width: 50%;
+    height: 40px;
+    background-color: rgb(240, 238, 238);
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
 }
 
 button:hover {
-    background-color: aqua;
+    background-color: #091057;
+}
+
+.aHover:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0015ff;
 }

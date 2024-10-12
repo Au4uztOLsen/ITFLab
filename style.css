@@ -8,6 +8,12 @@
     padding: 10px;
     justify-content: space-between;
 }
+
+.upper {
+    display: grid;
+    gap: 30px;
+}
+
 .logo{
     display: flex;
     /* margin-left: 20px;
@@ -48,7 +54,9 @@ button {
 }
 
 .foot-web {
-    background-color: grey;
+    display: flex;
+    background-color: rgb(218, 218, 218);
     height: 50px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
